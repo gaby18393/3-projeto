@@ -64,6 +64,9 @@ backface-visibility: hidden;
     color: var(--card-back-color);
     font-weight: 700;
 }
+. cartão.active . cartão conteudo {
+  transform: rotateY('180deg) 
+} 
 .cartao_conteudo_pergunta,
 .cartao_conteudo_pergunta{
     backface-visibility: hidden;
