@@ -7,9 +7,17 @@ criarCartao( categoria,pergunta,resposta)(
     cartao.className = 'cartao'
 )
 cartao.innerHTML = 
-`<div class="cartao_conteudo_pergunta"> 
-<p> O que é JavaScript?</p>
+`<div class="cartao_conteudo" >
+<h3>${categoria}</h3>
+<div class="cartao_conteudo_pergunta">
+<p>${pergunda}</p>
 </div>
-<div class="cartao_conteudo_resposta">
-<p> O Java Script é uma liguagem da programação</p>`
-CSSContainerRule.appenChild(cartao)
+<div class= "cartao_conteudo_resposta">
+<p>${resposta}</p>
+</div>
+</div>
+let respostaEstaVisivel= false
+function viraCartao() {
+respostaEstaVisivel=IrespostaEstaVisivel
+cartao.classList.toogle('active', respostaEstaVisivel)
+}
